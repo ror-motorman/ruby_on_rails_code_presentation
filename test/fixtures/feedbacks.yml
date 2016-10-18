@@ -1,0 +1,5 @@
+vasily_petrovich:
+  full_name: Vasily Petrovich
+  age: 45
+  interview_date: <%= Time.now + 1.day %>
+  document: test.txt

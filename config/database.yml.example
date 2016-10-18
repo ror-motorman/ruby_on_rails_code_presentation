@@ -1,0 +1,18 @@
+base: &base
+  adapter: mysql2
+  username: root
+  password:
+  host: localhost
+  encoding: utf8
+
+production:
+  <<: *base
+  database: feedback_form_prod
+
+development:
+  <<: *base
+  database: feedback_form_dev
+
+test: &test
+  <<: *base
+  database: feedback_form_test

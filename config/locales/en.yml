@@ -1,0 +1,56 @@
+en:
+  title: MassMedia Group
+  activerecord:
+    errors:
+      models:
+        feedback:
+          attributes:
+            age:
+              should_be_between_17_to_65: should be between 17 to 65
+            full_name:
+              should_consist_of_two_words: should consist of two words
+              must_contain_only_letters: "must contain only letters or available characters: ' - ."
+            interview_date:
+              must_be_in_future: must be in future
+  time:
+    formats:
+      datetime: '%d.%m.%y %R'  # 30.12.16 00:00
+  views:
+    feedbacks:
+      feedback_form: Feedback Form
+      successfully_created: "We are waiting for you at %{interview_date}"
+  simple_form:
+    "yes": Yes
+    "no": No
+    required:
+      text: 'required'
+      mark: '*'
+    error_notification:
+      default_message: 'Please review the problems below:'
+    labels:
+      feedback:
+        age: Age
+        full_name: Full Name
+        interview_date: Interview date
+  breadcrumbs:
+    application:
+      root: Index
+    pages:
+      pages: Pages
+  helpers:
+    actions: Actions
+    submit:
+      feedback:
+        create: Send feedback
+    links:
+      back: Back
+      cancel: Cancel
+      confirm: 'Are you sure?'
+      destroy: Delete
+      new: New
+      edit: Edit
+    titles:
+      edit: "Edit %{model}"
+      save: "Save %{model}"
+      new: "New %{model}"
+      delete: "Delete %{model}"

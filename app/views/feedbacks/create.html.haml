@@ -1,0 +1,8 @@
+.row.centered-form
+  .col-xs-12.col-sm-8.col-md-4.col-sm-offset-2.col-md-offset-4
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title
+          = t('title')
+      .panel-body
+        = t('views.feedbacks.successfully_created', interview_date: time_format(@feedback.interview_date))
